@@ -1,26 +1,55 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr auto auto 1fr;
+    grid-template-columns: auto auto 1fr;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
-
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
 }
 
-#knop{
+.header{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+
+#button{
     grid-column: 2/3;
+    margin-top: 8em;
 }
 
-.vlakje{
+.block{
+    position: absolute;
+    left: -12.95em;
     grid-column: 3/4;
-    background-color: lawngreen;
-    width: 5em;
+    width: 15em;
     height: 5em;
     transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+    border: 1px solid ;
+    border-radius: 5px;
 }
 
-.vlakje--schuif-uit {
+.block--slide-out {
     transform: translateX(50vw);
+}
 
+
+.block--green {
+    background-color: lawngreen;
+    top: 10em;
+
+}
+
+.block--orange {
+    background-color: orange;
+    top: 15em;
+
+}
+
+.block--red{
+    background-color: red;
+    top: 20em;
 }
