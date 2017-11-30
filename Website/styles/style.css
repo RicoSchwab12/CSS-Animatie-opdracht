@@ -1,0 +1,26 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr auto auto 1fr;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+
+}
+
+#knop{
+    grid-column: 2/3;
+}
+
+.vlakje{
+    grid-column: 3/4;
+    background-color: lawngreen;
+    width: 5em;
+    height: 5em;
+    transition: transform .6s cubic-bezier(.17,.67,.71,1.29);
+}
+
+.vlakje--schuif-uit {
+    transform: translateX(50vw);
+
+}
