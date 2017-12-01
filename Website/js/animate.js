@@ -12,3 +12,4 @@ const schuif =  () => {
 }
 
 knop.addEventListener('click', schuif);
+
